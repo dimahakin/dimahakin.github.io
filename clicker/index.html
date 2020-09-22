@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+</head>
+
+<body>
+<div id="th">
+<div id="wr">
+    <div>
+	<input type="text" id="count" value="0$" /><span id="plus">+</span>
+    </div>
+</div> 
+  <div id="buyTh">
+    <p>Купить за 20$</p>
+	  <span>Увеличит доход до 2$</span>
+	  </div>
+  <div id="buyTh1">
+    <p>Купить за 30$</p>
+	  <span>Увеличит доход до 3$</span>
+	  </div>
+	   <div id="buyTh2">
+    <p>Купить за 60$</p>
+	  <span>Увеличит доход до 4$</span>
+	  </div>
+	  </div>
+<script>
+ var wrp = document.getElementById('wr');
+ var countInput = document.getElementById('count');
+ var plus = document.getElementById('plus');
+ var units = countInput.value.replace(/\d/g, '');
+ var buy = document.getElementById('buyTh');
+ var buy1 = document.getElementById('buyTh1');
+ var buy2 = document.getElementById('buyTh2');
+ plus.onclick = function() {
+	 countInput.value = parseInt(countInput.value)+1+units;
+ };
+  buy.onclick = function() {
+	   if (parseInt(countInput.value) < 20) {
+		  alert('У вас нету денег!');
+		}
+	  if (parseInt(countInput.value) >= 20) {
+		  countInput.value = parseInt(countInput.value)-20+units;
+		   plus.onclick = function() {
+	 countInput.value = parseInt(countInput.value)+2+units;
+	   }	
+	  };
+  };
+    buy1.onclick = function() {
+	   if (parseInt(countInput.value) < 30) {
+		  alert('У вас нету денег!');
+		}
+	  if (parseInt(countInput.value) >= 30) {
+		  countInput.value = parseInt(countInput.value)-30+units;
+		   plus.onclick = function() {
+	 countInput.value = parseInt(countInput.value)+3+units;
+	   }	
+	  };
+  };
+   buy2.onclick = function() {
+	   if (parseInt(countInput.value) < 60) {
+		  alert('У вас нету денег!');
+		}
+	  if (parseInt(countInput.value) >= 60) {
+		  countInput.value = parseInt(countInput.value)-60+units;
+		   plus.onclick = function() {
+	 countInput.value = parseInt(countInput.value)+4+units;
+	   }	
+	  };
+  };
+   buy3.onclick = function() {
+	   if (parseInt(countInput.value) < 100) {
+		  alert('У вас нету денег!');
+		}
+	  if (parseInt(countInput.value) >= 100) {
+		  countInput.value = parseInt(countInput.value)-100+units;
+		   plus.onclick = function() {
+	 countInput.value = parseInt(countInput.value)+5+units;
+	   }	
+	  };
+  };
+</script> 
+</body>
+
+</html>

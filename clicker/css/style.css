@@ -1,0 +1,73 @@
+#wr {
+    margin-top: 2%;
+    position: relative;
+    padding: 5px 0px;
+    width: 130px;
+    overflow: hidden;
+    
+}
+#wr input {
+    display: block;
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid #c00;
+    outline: none;
+    float: left;
+}
+#plus {
+    float: left;
+    display: block;
+    font-size: 26px;
+    padding: 5px 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #d00;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#minus {
+	    float: left;
+    display: block;
+    font-size: 32px;
+	   padding: 0px 5px;
+	   margin-top: -4px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #d00;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#buyTh {
+   cursor: pointer;
+   line-height: 1px;
+   }
+   #buyTh p {
+   color: #d00;
+   font-size: 1.2em;
+   }
+   #buyTh1 {
+   cursor: pointer;
+   line-height: 1px;
+   padding-top: 1%;
+   }
+   #buyTh1 p {
+   color: #d00;
+   font-size: 1.2em;
+   }
+    #buyTh2 {
+   cursor: pointer;
+   line-height: 1px;
+   padding-top: 1%;
+   }
+   #buyTh2 p {
+   color: #d00;
+   font-size: 1.2em;
+   }
+   #th {
+	   padding: 10% 0 0 33%;
+   }
